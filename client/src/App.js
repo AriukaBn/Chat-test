@@ -15,7 +15,7 @@ useEffect(() =>{
 },[]);
 
 
-/*const [input, setInput] = useState();
+const [input, setInput] = useState();
 const onInputChange = (event) => {
     const text = (event.target.value)
     setInput(text);
@@ -24,7 +24,7 @@ const [inputPass, setInputPass] = useState();
 const onInputPassChange = (event) => {
     const text = (event.target.value)
     setInputPass(text);
-};*/
+};
 
 const [Checker, setChecker] = useState(false);
 
@@ -37,12 +37,12 @@ return (
                 <h2>Login</h2>
                 <div class="inputbox">
                   <MailOutlined />
-                  <input type="email" required /*value={input} onChange={onInputChange}*//>
+                  <input type="email" required value={input} onChange={onInputChange}/>
                   <label for="">Email</label>
                 </div>
                 <div class="inputbox">
                   <KeyOutlined />
-                  <input type="password" required /*value={inputPass} onChange={onInputPassChange}*//>
+                  <input type="password" required value={inputPass} onChange={onInputPassChange}/>
                   <label for="">Password</label>
                 </div>
                 <div class="Forget">
